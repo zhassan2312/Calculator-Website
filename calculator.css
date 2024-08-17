@@ -1,0 +1,84 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    color: white;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    background-color: #1F1F1F;
+    padding: 16px;
+    border-radius: 16px;
+    width: 400px;
+}
+
+.display {
+    width: 100%;
+    height: 80px;
+    padding: 0 16px;
+    box-sizing: border-box;
+    font-size: 36px;
+    color: white;
+    text-align: right;
+    background-color: #333333;
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 16px;
+}
+
+.button {
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    padding: 20px 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+.digitButton {
+    background-color: #4D4D4D;
+}
+
+.clearButton {
+    background-color: #ca0404;
+}
+
+.operatorButton {
+    background-color: #FE9F1A;
+}
+
+.additionalButton {
+    background-color: rgb(114, 188, 2);
+}
+
+.calculateButton {
+    background-color: #000000;
+}
+
+.bracketButton {
+    background-color: rgb(2, 200, 187);
+}
+
+.clearLastEntryButton,
+.memoryClearButton,
+.memoryRecallButton,
+.memoryAddButton,
+.memorySubtractButton {
+    background-color: #FF6347;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
